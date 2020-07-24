@@ -1,16 +1,28 @@
 {
   "name": "crud_app",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:install":"createdb learncrud && psql learncrud < install.sql"
+    "db:install": "createdb learncrud && psql learncrud < install.sql",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "modules": "^0.4.0",
+    "node": "^14.5.0",
+    "nodemon": "^2.0.4",
     "pg-promise": "^10.5.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techbyivan/learn_crud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techbyivan/learn_crud/issues"
+  },
+  "homepage": "https://github.com/techbyivan/learn_crud#readme",
+  "description": ""
 }
